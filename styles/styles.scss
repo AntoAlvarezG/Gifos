@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.dark {
+        background-color: #37383C;
+    }
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex
+}
+
+.cont_hover_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	background-color: #572ee5;
+	opacity: 0.6;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+    color: white;
+}
+
+@import "navbar";
+@import "hero";
+@import "tt";
+@import "slider";
+@import "footer";
+

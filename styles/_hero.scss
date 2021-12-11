@@ -1,0 +1,176 @@
+#hero_section {
+    width: 100%;
+    margin-top: 76px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin: 20px 0;
+        width: 286px;
+        color: #572EE5;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #hero_img_cont, #hero_img {
+        width: 399px;
+        height: 190px;
+    }
+    #searchbar_cont {
+        width: 551px;
+        height: 50px;
+        border: 1px solid #572EE5;
+        border-radius: 27px;
+        border-radius: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        #searchbar_items {
+            padding: 0 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            #hero_input {
+                width: 400px;
+                height: 22px;
+                font-size: 16px;
+            }
+            #search_img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#search_results_section, #search_noresults_section {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    #search_title, #search_title_noresults {
+		font-size: 35px;
+		line-height: 30px;
+        color: #572EE5;
+        text-align: center;
+	}
+    #cont_search_cards {
+        width: 100%;
+        height: auto;
+        padding: 0 10.8%;
+        margin-top: 38px;
+	    display: grid;
+	    grid-template-columns: repeat(4, 260px);
+		grid-template-rows: repeat(3, 200px);
+		gap: 31px 29px;
+        justify-items: center;
+        align-items: center;
+        .search_card {
+            width: 260px;
+            height: 200px;
+            position: relative;
+            .card_img {
+                width: inherit;
+                height: inherit;
+            }
+            .hover_info {
+                top: 0;
+                width:inherit;
+                height: inherit;
+                position: absolute;
+                opacity: 0.6;
+                background: #572EE5;
+                color: white;
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                h3, h4 {
+                    margin-left: 5px;
+                }
+                h3 {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+    #btn_more {
+        margin-top: 78px;
+        margin-bottom: 79px;
+        width: 127px;
+        height: 50px;
+        border: 1px solid #572ee5;
+        border-radius: 25px;
+        background-color: white;
+        color: #572ee5;
+        font-size: 13px;
+        letter-spacing: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    #btn_more:hover {
+        color: white;
+        background-color: #572ee5;
+    }
+    #cont_search_noresults {
+        margin-top: 110px;
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #img_noresults {
+            width: 150px;
+            height: 150px;
+        }
+        #text_noresults {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+#search_results_section::before, #search_noresults_section::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #9cafc3;
+    width: 338px;
+    margin-top: 55px;
+    margin-bottom: 81px;
+}
+
+body.dark {
+    #hero_section {
+        h1 {
+            color: white;
+        }
+        #searchbar_cont {
+            border: 1px solid white;
+            #searchbar_items {
+                #hero_input {
+                    color: white;
+                    background-color: #37383C;
+                }
+            }
+        }
+    }
+    #search_results_section, #search_noresults_section {
+        #search_title, #search_title_noresults, #text_noresults {
+            color: white;
+        }
+        #btn_more {
+            border: 1px solid white;
+            color: white;
+            background-color: #37383C;
+        }
+        #btn_more:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+}

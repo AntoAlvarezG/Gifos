@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <!--logo-->
+    <link href="/images/logo-mobile.svg" rel="shortcut icon">
+    <!--styles-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header id="navbar_section">
+        <!-- logo -->
+        <a id="a_logo" href="index.html">
+            <img id="img_link_logo" src="../images/logo-mobile.svg" alt="site's logo">
+        </a>
+        <button id="night_mode">DARK THEME</button>
+    </header>
+
+    <main>
+
+        <!-- hero section -->
+        <section id="hero_section">
+            <h1>Search for your favorite GIFS</h1>
+            <!-- welcome image -->    
+            <div id="hero_img_cont">
+                <img id="hero_img" src="../images/ilustra_header.svg" alt="welcome image">
+            </div>
+            <!-- search bar -->
+            <div id="searchbar_cont">
+                <div id="searchbar_items">
+                    <input id="hero_input" type="text" placeholder="Search GIFS and more">
+                    <img id="search_img" src="../images/icon-search.svg" alt="search icon">
+                </div>
+                <!-- autocomplete bar -->
+                <span class="hidden"></span>
+                <!-- suggestions -->
+                <ul class="hidden"></ul>
+            </div>
+        </section>
+
+        <!-- search results -->
+        <section id="search_results_section">
+            <!-- title -->
+            <h2 id="search_title"></h2>
+            <!-- card container -->
+            <div id="cont_search_cards"></div>
+            <!-- show more button -->
+            <button id="btn_more" class="hidden">SHOW MORE</button>
+        </section>
+
+        <!-- trending topics -->
+        <section id="tt_section">
+            <!-- titulo -->
+            <h4 id="tt_title">Trending:</h4>
+            <!-- tags -->
+            <ul id="tt_ul">
+                <li class="tt_li"></li>
+                <li class="tt_li"></li>
+                <li class="tt_li"></li>
+                <li class="tt_li"></li>
+                <li class="tt_li last"></li>
+            </ul>
+        </section>
+
+        <!-- search with no results -->
+        <section id="search_noresults_section">
+            <!-- title -->
+            <h2 id="search_title_noresults"></h2>
+            <!-- card container -->
+            <div id="cont_search_noresults">
+                <img id="img_noresults" src="../images/icon-busqueda-sin-resultado.svg" alt="no results, try again">
+                <p id="text_noresults">Sorry. Try again with a different search.</p>
+            </div>
+        </section>
+
+         <!-- trending gifs slider -->
+        <section id="trending_section">
+            <!-- title -->
+            <h2>Trending GIFS</h2>
+            <!-- sub -->
+            <p id="trending_sub">Check out the latest GIFS from our community</p>
+            <!-- slider -->
+            <div id="cont_slider">
+                <!-- left btn -->
+                <button class="btn_slider" id="btn_left_slider"></button>
+                <!-- cards -->
+                <div id="cont_trending_cards"></div>
+                <!-- right btn -->
+                <button class="btn_slider" id="btn_right_slider"></button>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- social media -->
+    <footer class="visible">
+        <!-- icons -->
+        <div id="cont_social_media" class="visible">
+            <p>Share:</p>
+            <div id="cont_social_media_icons">
+                <a class="social_a" href="https://es-la.facebook.com/" target="_blank">
+                    <img id="icon_fb" src="/images/icon-fb.svg" alt="facebook icon">
+                </a>
+                <a class="social_a" href="https://twitter.com" target="_blank">
+                    <img id="icon_tw" src="/images/icon-tw.svg" alt="twitter icon">
+                </a>
+                <a class="social_a" href="https://www.instagram.com/" target="_blank">
+                    <img id="icon_insta" src="/images/icon-insta.svg" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+        <!-- rights -->
+        <p>© All Rights Reserved.</p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="/js/app.js"></script>
+    <script src="/js/dark_theme.js"></script>
+    <script src="/js/hover.js"></script>
+</body>
+</html>
