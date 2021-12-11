@@ -77,13 +77,13 @@
             background-image: url(/images/button-left.svg);
         }
         #btn_left_slider:hover {
-            background-image: url(../images/button-left-hover.svg);
+            background-image: url(/images/button-left-hover.svg);
         }
         #btn_right_slider {
             background-image: url(/images/button-right.svg);
         }
         #btn_right_slider:hover {
-            background-image: url(../images/button-right-hover.svg);
+            background-image: url(/images/button-right-hover.svg);
         }
     }
 }
@@ -103,14 +103,14 @@ body.dark {
                 background-image: url(/images/button-left-hover.svg);
             }
             #btn_left_slider:hover {
-                background-image: url(../images/button-left-noc.svg);
+                background-image: url(/images/button-left-noc.svg);
                 background-color: white;
             }
             #btn_right_slider {
                 background-image: url(/images/button-right-hover.svg);
             }
             #btn_right_slider:hover {
-                background-image: url(../images/button-right-noc.svg);
+                background-image: url(/images/button-right-noc.svg);
                 background-color: white;
             }
         }
